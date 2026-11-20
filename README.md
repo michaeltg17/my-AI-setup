@@ -14,15 +14,15 @@ Just use Strata with `Qwen3.8-Flash-Next`. Quant IQ3_S. With some VM's and norma
 
 - Clone [Niko1221/Strata](https://github.com/Niko1221/Strata)
 - Double-click `START-HERE.bat`
-- Follow the steps.
+- Follow the steps. It'll download the model and required files.
 - Update later with `UPDATE.bat`.
 
 ## The harness
 
-OpenCode with [`opencode.json`](opencode.json) from this repo: local provider pointing at the Strata endpoint, `model: local/Qwen3.8-Flash-Next-IQ3_S`.
+Just use [OpenCode](https://github.com/anomalyco/opencode) with [`opencode.json`](opencode.json).
 
-### Web search — SearXNG
+### Web search
 
-OpenCode websearch is disabled because using SearXNG is better for this. Have your own instance and use it.
+OpenCode websearch is disabled because using SearXNG is better for this. Have your own instance and use it — easiest is Docker: [searxng/searxng-docker](https://github.com/searxng/searxng-docker).
 
-MCP config per repo or global. I prefer per repo to save as much context as I can.
+MCP is [mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng). MCP config per repo or global. I prefer per repo to save as much context as I can.
