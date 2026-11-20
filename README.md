@@ -1,26 +1,24 @@
-# my-ai-setup
+# My AI Setup
 
-My AI setup — configs, prompts, and workflows I use across all my projects.
+- **CPU:** AMD Ryzen 7 9800X3D
+- **GPU:** 2× NVIDIA GeForce RTX 3090 24 GB (ASUS ROG Strix + MSI SUPRIM X) — 48 GB VRAM total
+- **RAM:** 128 GB DDR5-5600 (2× 64 GB, dual channel)
+- **Motherboard:** Gigabyte B850 AI TOP
+- **Storage:** Samsung 990 EVO Plus 4 TB NVMe
 
-## Model — Strata
+I use Windows. Just use Strata with `Qwen3.8-Flash-Next`. Quant IQ3_S. With some VM's and normal usage 120GB are used.
 
-Serves `Qwen3.8-Flash-Next-IQ3_S` as an OpenAI-compatible API on the local network.
-
-Windows:
-- Download or clone [Niko1221/Strata](https://github.com/Niko1221/Strata)
+- Clone [Niko1221/Strata](https://github.com/Niko1221/Strata)
 - Double-click `START-HERE.bat`
-- Accept the recommended model and settings
-- When it's ready, open `http://127.0.0.1:8080`
-- Update later with `UPDATE.bat` · v0.2.17
-
-API endpoint: `http://192.168.1.100:9931/v1`
+- Follow the steps.
+- Update later with `UPDATE.bat`.
 
 ## Agent — OpenCode
 
 Uses [`opencode.json`](opencode.json) from this repo: local provider pointing at the Strata endpoint, `model: local/Qwen3.8-Flash-Next-IQ3_S`.
 
-## Web search — SearXNG (opt-in per repo)
+## Web search — SearXNG
 
-The built-in OpenCode websearch is disabled (`websearch: false`); search goes through the SearXNG MCP server included in `opencode.json`.
+OpenCode websearch is disabled because using SearXNG is better for this. Have your own instance and use it.
 
-This config is **project-level, not global** — drop `opencode.json` into a repo to opt in to the whole setup; repos without one are unaffected.
+MCP config per repo or global. I prefer per repo to save as much context as I can.
