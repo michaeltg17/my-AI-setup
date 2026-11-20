@@ -1,8 +1,0 @@
-# secrets / local state
-.env
-.env.*
-.opencode/
-
-# OS / editor junk
-Thumbs.db
-.DS_Store
