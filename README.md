@@ -1,4 +1,4 @@
-# My AI Setup
+# My AI setup
 
 ## The hardware
 
@@ -23,6 +23,6 @@ Just use [OpenCode](https://github.com/anomalyco/opencode) with [`opencode.json`
 
 ### Web search
 
-OpenCode websearch is disabled because using SearXNG is better for this. Have your own instance and use it — easiest is Docker: [searxng/searxng-docker](https://github.com/searxng/searxng-docker).
+OpenCode WebSearch is disabled because using [SearXNG](https://github.com/searxng/searxng) is better for this. Have your own instance (I use docker).
 
 MCP is [mcp-searxng](https://github.com/ihor-sokoliuk/mcp-searxng). MCP config per repo or global. I prefer per repo to save as much context as I can.
